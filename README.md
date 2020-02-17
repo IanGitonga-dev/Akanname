@@ -1,14 +1,14 @@
-#AKAN NAME
+# AKAN NAME
 
 ##{Date of current version}
 
 2020
 
-###By
+### By
 
 ###### Ian Koome
 
-###BDD
+### BDD
 
 ##### Description
 
