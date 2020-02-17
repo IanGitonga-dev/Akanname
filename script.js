@@ -1,8 +1,8 @@
-function name(){
-  alert("Button is working");
-  var year =document.getElementaryById("year").value;
-  var MM = parseInt(document.getElementaryById("month").value);
-  var DD = parseInt(document.getElementaryById("date").value);
+function akanName(){
+
+  var year = document.getElementById("year").value;
+  var MM = parseInt(document.getElementById("month").value);
+  var DD = parseInt(document.getElementById("date").value);
   var CC = parseInt( year.slice(0,2));
   var YY = parseInt(year.slice(2,4));
 
@@ -10,11 +10,9 @@ function name(){
   var myDays=["Sunday","Monday","Tuesday","Wednesday","Thursday,Friday","Saturday"];
   var Malenames=["Kwasi","Kwadwo","Kwabena","Kwaku","Yaw","Kofi","Kwame"];
   var Females=["Kwasi","Adwoa","Abenaa","Akua","Yaa","Afua","Ama"];
-  var gender =document.getElementaryById("gender").value;
+  var gender =document.getElementById("gender").value;
   console.log(gender);
-
-
-
+  
   var calculateDate = (((CC/4) -2*CC-1)+((5*YY/4)) +((226*(MM+1)/10)) +DD)%7;
   calculateDate= Math.floor(calculateDate);
   if (MM <1||MM>12){
@@ -32,5 +30,5 @@ function name(){
   }
 
   var output = sex[calculateDate];
-  document.getElementaryById("answer").innerHTML = "congratulations your Akan name is " +output+".";
+  document.getElementById("answer").innerHTML = " congratulations your Akan name is " +output+".";
 }
