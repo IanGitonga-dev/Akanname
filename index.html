@@ -1,0 +1,44 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>users form</title>
+         <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+  
+  </head>
+
+<body style ="background-image: url(afric/africa.jpg);">
+
+
+ <h1>users form</h1>
+
+          <p>Many people know their birthdays but do not know the day of the week they were born.<br>        
+              this application enables one to know the day of the week they were born.when the user<br>         
+              gives the details of his/her birthday,the application gives the day they were born and <br>         
+              also outputs his/her correspondin Ghanian name.when the user fills the form below and <br>
+             submits it,he/she receives the</p>
+
+     <div class="col-lg-4 col-md-6 col col-xs-8 col2">
+          <form>
+            <label>year of birth</label><br>
+            <input type="text"placeholder= "YoB" id = "year"><br>
+          
+            <label>Month</label><br>
+            <input type="text"placeholder="mm" id = "month"><br>
+             
+             <labe>Date</labe><br>
+             <input type="text"placeholder="DoB" id = "date"><br> 
+
+             <label> Gender </label>
+             <select id = "gender" name = "gender">
+               <option value="male"> Male</option>
+               <option value="female"> Female</option>
+             </select>
+             <!-- <input type="submit"  onclick="name()"  > -->
+             <button onclick="name();">Button</button>
+          </form>
+            <p id="answer">akan name is</p>
+      </div>
+            <script src="script.js"></script>
+    </body>
+</html>
